@@ -1,0 +1,215 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<link rel="shortcut icon" href="#">
+<title>e2aforums</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="ashi/fonts/stylesheet.css">
+<link type="text/css" rel="stylesheet" href="ashi/typography/typography.css">
+<link type="text/css" rel="stylesheet" href="ashi/css/style.css">
+<asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+<div class="main_wrapper">
+  <header class="main_header">
+    <div class="container">
+      <div class="header_inner">
+        <div class="logo"><a href="/index.aspx"><img src="ashi/images/logo.png" title="e2a Forums" alt="Logo"></a></div>
+        <div class="right_part">
+          <nav>
+            <div class="navbar navbar-default" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              </div>
+              <div id="navbarCollapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown active"><a href="Home.aspx">HOME</a></li>
+                  <li class="dropdown"><a href="Register.aspx">SIGN UP</a></li>
+                  <li class="dropdown"><a href="AboutUs.aspx">ABOUT US</a></li>
+                  <li class="dropdown"><a href="WhyUs.aspx">WHY e2aforums?</a></li>
+                  <li class="dropdown"><a href="Pricing.aspx">PRICING</a></li>
+                  <li class="dropdown"><a href="http://e2aforums.com/blog">BLOG</a></li>
+                  <li class="dropdown"><a href="Support.aspx">SUPPORT</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </header>
+  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 apps"> <a href="#"><img src="ashi/images/footer_logo.png"alt=""></a>
+        <ul class="playstore">
+          <li class="appstore"><a href="#"><img src="ashi/images/appstore.png" alt=""></a></li>
+          <li class="googleplay"><a href="#"><img src="ashi/images/googleplay.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 categories">
+        <h3>Quick Links</h3>
+        <ul class="form_categories">
+          <li><a href="http://e2aforums.com/">HOME</a></li>
+          <li><a href="Register.aspx">SIGN UP</a></li>
+          <li><a href="AboutUs.aspx">ABOUT US</a></li>
+          <li><a href="WhyUs.aspx">WHY E2A FORUMS</a></li>
+          <li><a href="Pricing.aspx">PRICING</a></li>
+          <li><a href="blog">BLOG</a></li>
+          <li><a href="Support.aspx">SUPPORT</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 contacts">
+        <h3>Contact Us</h3>
+        <ul class="information">
+          <li><a href="tel:+1-888-280-7780"><b>Toll Free:</b> +1-888-280-7780</a></li>
+          <li><a href="mailto:info@e2aforums.com"><b>Email:</b> info@e2aforums.com</a></li>
+          <li><a href="mailto:support@e2aforums.com"><b>Support:</b> support@e2aforums.com</a></li>
+        </ul>
+        <ul class="social_icons">
+          <li><a href="https://twitter.com/e2aforums"><img src="ashi/images/twitter.png" alt=""></a></li>
+          <li><a href="https://www.facebook.com/join.e2aforums"><img src="ashi/images/fb.png" alt=""></a></li>
+          <li><a href="https://plus.google.com/115450398151198234886/about"><img src="ashi/images/Google-Plus-icon.png" alt=""></a></li>
+          <li><a href="https://www.pinterest.com/e2aforums/"><img src="ashi/images/pinterest.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6035270430884!2d-79.74581138412508!3d43.46898229918239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b67f6b217108b%3A0xdf1b29153e3641ee!2s507+Sixteen+Mile+Dr%2C+Oakville%2C+ON+L6M+0P6%2C+Canada!5e1!3m2!1sen!2sin!4v1462975710585" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="row">
+        <div class="col-sm-6">
+          <!--<ul>
+            <li><a href="#">Privacy  Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>-->
+        </div>
+        <div class="col-sm-6">
+          <p>2014-15 &copy; e2aforums | <a href="/PrivacyPolicy.aspx">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+<script src="js/script.js"></script> 
+<script src="User/js/plugins.js"></script> 
+<script src="User/js/app.js"></script> 
+<!-- Load and execute javascript code used only in this page --> 
+<script src="User/js/pages/login.js"></script> 
+<script>
+    document.addEventListener("keypress", function (e) {
+        var getKeyCode = e.keyCode;
+        if (getKeyCode == 27) {
+            var getCodeId = document.getElementById("expert_info");
+            getCodeId.classList.remove("in");
+            var selements = document.getElementsByClassName('modal-backdrop');
+            for (var i = 0; i < selements.length; ++i)
+                selements[i].classList.remove("in");
+        }
+    });
+</script> 
+<script>
+
+        $(function () {
+            Login.init();
+        });
+
+        function ShowProfileModal(pvarUserID) {
+            $.post("Ajax/AjaxUser.aspx",
+                    {
+                        Mode: "VIEWUSERPROFILE",
+                        UserID: pvarUserID
+                    },
+                  function (VarResponseData) {
+                      $(VarResponseData).find('Response').each(function () {
+                          $(VarResponseData).find('UserData').each(function () {
+
+
+                              if ($(this).find('AboutMe').text() != "") {
+                                  $('#eaboutMe').html($(this).find('AboutMe').text());
+                              }
+                              else {
+                                  $('#eaboutMe').html('-');
+                              }
+
+                              if ($(this).find('Full_Name').text() != "") {
+                                  $('.eprofileName').html($(this).find('Full_Name').text());
+                              } else {
+                                  $('.eprofileName').html('-');
+                              }
+                              if ($(this).find('EMail').text() != "") {
+                                  $('.eprofileEmail').html($(this).find('EMail').text());
+                              } else {
+                                  $('.eprofileEmail').html('-');
+                              }
+                              if ($(this).find('Picture').text() != "") {
+                                  $('#profilePic').html($(this).find('Picture').text());
+                              }
+
+
+                              //if ($(this).find('Address_line1').text() != "") {
+                              //    $('#p_address1').html($(this).find('Address_line1').text());
+                              //}
+                              //if ($(this).find('Address_Line2').text() != "") {
+                              //    $('#p_address1').html($('#p_address1').html() + "<br/>" + $(this).find('Address_Line2').text());
+                              //}
+                              //if ($(this).find('Address_Line3').text() != "") {
+                              //    $('#p_address1').html($('#p_address1').html() + "<br/>" + $(this).find('Address_Line3').text());
+                              //}
+                              //if ($(this).find('City').text() != "") {
+                              //    $('#p_City').html($(this).find('City').text());
+                              //}
+                              //if ($(this).find('Organization').text() != "") {
+                              //    $('#p_Organization').html($(this).find('Organization').text());
+                              //}
+                              //if ($(this).find('Mobile_Phone').text() != "") {
+                              //    $('#p_Mobile').html($(this).find('Mobile_Phone').text());
+                              //}
+                              //if ($(this).find('Occupation').text() != "") {
+                              //    $('#p_Occupation').html($(this).find('Occupation').text());
+                              //}
+                              //if ($(this).find('DealerName').text() != "") {
+                              //    $('#p_DealerName').html($(this).find('DealerName').text());
+                              //}
+                              //if ($(this).find('MGA').text() != "") {
+                              //    $('#p_MGA').html($(this).find('MGA').text());
+                              //}
+                              ////if ($(this).find('GoverningBody').text() != "") {
+                              //    $('#p_GoverningBody').html($(this).find('GoverningBody').text());
+                              //}
+                              //if ($(this).find('InBusinessSince').text() != "") {
+                              //    $('#p_InBusinessSince').html($(this).find('InBusinessSince').text());
+                              //}
+
+                              //if ($(this).find('ProfileYoutubeURL').text() != "") {
+                              //    $('#divYoutubeVideo').html($(this).find('ProfileYoutubeURL').text());
+                              //}
+                          });
+
+                      }); //end of Response   
+                      NProgress.done();
+                  });                 //End of Ajax
+
+            return false;
+        }
+    </script>
+</body>
+</html>

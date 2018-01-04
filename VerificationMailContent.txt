@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Letsmeet</title>
+<style type="text/css">
+body
+{
+	width:100%;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.container
+{
+	width:615px;
+	height:325px;
+	margin:10px auto;
+	background-color:transparent;
+}
+.main
+{
+	width:585px; 
+	min-height:295px; 
+	float:left; 
+	margin:10px 0px 0px 14px;	
+	background-color:#ffffff;
+	box-shadow: 0px 3px 5px #a3a3a3;
+	
+}
+.header
+{
+	width:585px; 	
+	float:left; 	
+	background-color:#f6f4f4;
+	height:50px;
+	
+}
+h2
+{
+	font-family:Verdana;
+	font-size:24px;
+	color:#314f8c;
+	margin:10px 0 0 10px;
+	float:left;
+	text-transform:uppercase;
+}
+h4
+{
+	font-family:Verdana;
+	font-size:12px;
+	color:#000000;
+	margin:20px 0 0 25px;
+	float:left;
+	font-weight:500;		
+}
+</style></head>
+
+<body>
+
+<div class="container">
+
+   <div class="main" >
+   <div class="header">
+   <img src="http://localhost:1401/User/img/e2aLogo.PNG" style="margin:2px 0px 0px 2px; float:left;">
+   
+   </div>
+   
+   <h4>Dear <User>,<br/><br/>	
+	Please verify your email by clicking the following link:<br/><br/>
+	<a href="<Verifylink>" target='_blank'><img alt="Verify" title="Click to verify account" src="http://localhost:1401/User/img/Verify.png" ></a><br/><br/>
+	If you are unable to verify using the above link, copy/paste the following link to your browser to verify:<br/><br/>
+	<VerifylinkOriginal>
+	<br/><br/>
+
+	Thanks <br/>
+	Team Instynt
+	<br/><br/>
+	If you do not want to get this email, please reply to <a href="mailto:instynt@gmail.com">instynt@gmail.com</a>.
+    <br/>If you have trouble accessing or using the Instynt, please contact us at <a href="mailto:instynt@gmail.com">instynt@gmail.com</a>.    
+    
+    </h4>
+   <br/>
+   </div>
+   
+ </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="description" content="log in">
+    <meta name="author" content="PetCloud">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="../User/img/favicon.ico">
+    <link rel="apple-touch-icon" href="../User/img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="../User/img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="../User/img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="../User/img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="../User/img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../User/img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="../User/img/icon152.png" sizes="152x152">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Bootstrap is included in its original form, unaltered -->
+    <link rel="stylesheet" href="../User/css/bootstrap.min.css">
+    <!-- Related styles of various icon packs and plugins -->
+    <link rel="stylesheet" href="../User/css/plugins.css">
+  
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="../User/css/main.css">
+    <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="../User/css/themes.css">
+<link href="css/toastr.css" rel="stylesheet" />
+    <!-- END Stylesheets -->
+    <script src="../js/1.9.1.js"></script>
+    <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <!--[if lt IE 10]>
+            <script src="../js/jquery.placeholder.min.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+ 
+   
+    
+</head>
+<body style="background-color:#009EEA;">
+    <!-- Login Background -->
+    <div id="login-background">
+        <!-- For best results use an image with a resolution of 2560x400 pixels (prefer a blurred image for smaller file size) -->
+        <!-- <img src="../User/img/placeholders/headers/login_header.jpg" alt="Login Background" class="animation-pulseSlow">-->
+    </div>
+    <!-- END Login Background -->
+    <!-- Login Container -->
+    <div id="login-container" class="animation-fadeIn">
+        <!-- Login Title -->
+        <div class="login-title text-center">
+            <h1>
+               <div class="brand"><i class="ico-briefcase ico-color circle-color"></i><span>Bewiseinvesting</span></div>
+                <small><strong>Login</strong></small>
+            </h1><!--<strong id="c_name"></strong>-->
+            <br>
+            <!--<small>Please <strong>Login</strong> or <strong>Register</strong></small>--></h1>
+        </div>
+        <!-- END Login Title -->
+        <!-- Login Block -->
+        <div class="block remove-margin">
+            <!-- Login Form -->
+            <form action="" id="form-login" class="form-horizontal form-bordered form-control-borderless">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="text" id="LoginUsername" name="LoginUsername" class="form-control input-lg"
+                                   placeholder="test@gmail.com" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+                            <input type="password" id="LoginPassword" name="LoginPassword" class="form-control input-lg"placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-actions">
+                    <div class="col-xs-4">
+                        <label class="switch switch-primary" data-toggle="tooltip" title="Remember Me?">
+                            <input type="checkbox" id="login-remember-me" name="login-remember-me" checked>
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="col-xs-8 text-right">
+                        <button type="button" id="btnlogin"  onClick="window.location.href='page_ready_forum.html'"class="btn btn-sm btn-primary">
+                            <i class="fa fa-angle-right"></i>Login to Dashboard
+                        </button>
+                        <a href="index.html">
+                            <button type="button" class="btn btn-sm btn-default" onClick="window.location = '../index.html'; return false;">
+                                <i class="fa fa-cancel"></i>Cancel
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <p class="text-center remove-margin">
+                            <small>Don't have an account?</small> <a href="SignUp.html" id="link-login">
+                                <small>Create one for free!</small></a></p>
+                    </div>
+                </div>
+            </form>
+            <!-- END Login Form -->
+            <!-- Register Form -->
+            
+            <!-- END Register Form -->
+        </div>
+        <!-- END Login Block -->
+    </div>
+    <!-- END Login Container -->
+    <!-- Modal Terms -->
+    <div id="modal-terms" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        Terms &amp; Conditions
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <h4>
+                        Title
+                    </h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <h4>
+                        Title
+                    </h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <h4>
+                        Title
+                    </h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal Terms -->
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="../User/js/pages/uiProgress.js"></script>
+    <script>        $(function () { UiProgress.init(); });</script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="js/toastr.js"></script>
+    
+    <!-- common.js user for Google Analytics Object code-->
+	<script src="js/Common.js"></script>
+    
+    
+</body>
+
+</html>

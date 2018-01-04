@@ -1,0 +1,111 @@
+html, body, aside {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 40px;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: cover;	
+}
+aside {
+	width: 233px;
+	min-height: 500px;
+}
+aside.right {
+	margin-left: auto;
+}
+a {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.bg-red {
+	background-image: url(../img/bg-red.jpg);
+}
+.bg-orange {
+	background-image: url(../img/bg-orange.jpg);
+}
+.bg-yellow {
+	background-image: url(../img/bg-yellow.jpg);
+}
+.bg-green {
+	background-image: url(../img/bg-green.jpg);
+}
+.bg-cyan {
+	background-image: url(../img/bg-cyan.jpg);
+}
+.bg-blue {
+	background-image: url(../img/bg-blue.jpg);
+}
+.bg-purple {
+	background-image: url(../img/bg-purple.jpg);
+}
+.bg-pink {
+	background-image: url(../img/bg-pink.jpg);
+}
+.bg-black {
+	background-image: url(../img/bg-black.jpg);
+}
+.body {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+	body {
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	body {
+		padding: 10px;
+	}
+	aside {
+		width: auto;
+	}
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+h1 {
+  line-height: 1em;
+}
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eee;
+}
+table {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.fileupload-progress {
+	margin: 10px 0;
+}
+.fileupload-progress .progress-extended {
+	margin-top: 5px;
+}
+.error {
+  color: red;
+}
+
+@media (min-width: 481px) {
+  .navigation {
+    list-style: none;
+    padding: 0;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li:not(:first-child):before {
+    content: "| ";
+  }
+}

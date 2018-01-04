@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <meta name="description" content="log in">
+    <meta name="author" content="PetCloud ">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Bootstrap is included in its original form, unaltered -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Related styles of various icon packs and plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <style type="text/css">
+        #nprogress .bar {
+            background-color: #ac2929;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="css/themes.css">
+    <link href="css/toastr.css" rel="stylesheet" />
+    <!-- END Stylesheets -->
+    <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
+    <script src="js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/parse-1.2.13.min.js"></script>
+    <!--[if lt IE 10]>
+            <script src="../js/jquery.placeholder.min.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+            <script src="../js/html5.js"></script>
+            <script src="../js/sky-forms-ie8.js"></script>
+        <![endif]-->
+   
+	<script src="js/pages/uiProgress.js"></script>
+    <script>        $(function () { UiProgress.init(); });</script>
+</head>
+<body style="background-color:#009EEA;">
+    <!-- Login Background -->
+    <div id="login-background">
+        <!-- For best results use an image with a resolution of 2560x400 pixels (prefer a blurred image for smaller file size) -->
+        <!-- <img src="img/placeholders/headers/login_header.jpg" alt="Login Background" class="animation-pulseSlow">-->
+    </div>
+    <!-- END Login Background -->
+    <!-- Login Container -->
+    <div id="login-container" class="animation-fadeIn">
+        <!-- Login Title -->
+        <div style="margin: 0px; padding: 3px;" class="login-title text-center">
+            <h1>
+               <div class="brand"><i class="ico-briefcase ico-color circle-color"></i><span>Bewiseinvesting</span></div><br>
+                <small><strong>Register</strong></small></h1>
+        </div>
+        <!-- END Login Title -->
+        <!-- Login Block -->
+        <div class="block remove-margin">
+            <!-- Form Validation Example Content -->
+            <form id="form-validation" class="form-horizontal form-bordered">
+            <fieldset>
+               <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="val_username">
+                        Username <span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="text" id="val_username" name="val_username" class="form-control" placeholder="Your username..">
+                            <span class="input-group-addon"><i class="gi gi-user"></i></span>
+                        </div>
+                    </div>
+                </div>-->
+               <div class="form-group">
+                    <label class="col-md-4 control-label" for="val_email">
+                        Email <span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="text" id="val_email" name="val_email" class="form-control" placeholder="test@example.com">
+                            <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="val_password">
+                        Password <span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="password" id="val_password" name="val_password" class="form-control"
+                                placeholder="Choose a crazy one..">
+                            <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="val_confirm_password">
+                        Confirm Password <span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="password" id="val_confirm_password" name="val_confirm_password" class="form-control"
+                                placeholder="..and confirm it!">
+                            <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group form-actions">
+                <div class="col-md-8 col-md-offset-4">
+                    <a href="SignUp-1.html"<button type="button" id="btn-signup" class="btn btn-sm btn-primary">
+                        <i class="fa fa-arrow-right"></i>Sign up</button></a>
+                      <a href="login.html">
+                            <button type="button" class="btn btn-sm btn-default" onClick="window.location = 'login.html'; return false;">
+                                <i class="fa fa-cancel"></i>Cancel
+                            </button>
+                        </a>
+                </div>
+            </div>
+            </form>
+            <!-- END Form Validation Example Content -->
+        </div>
+        <!-- END Login Block -->
+    </div>
+    <!-- END Login Container -->
+    <!-- Modal Terms -->
+    <div id="modal-terms" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;</button>
+                    <h4 class="modal-title">
+                        Terms &amp; Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>
+                        Title</h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <h4>
+                        Title</h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <h4>
+                        Title</h4>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <p>
+                        Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin
+                        ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse
+                        potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt
+                        scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque
+                        non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal Terms -->
+    <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
+    <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>        !window.jQuery && document.write(unescape('%3Cscript src="js/vendor/jquery-1.11.0.min.js"%3E%3C/script%3E'));</script>
+    <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="js/pages/formsValidation.js"></script>
+    <script src="js/toastr.js"></script>    
+   
+   <!-- common.js user for Google Analytics Object code-->
+	<script src="js/Common.js"></script>
+    
+    <script>
+        // Include the UserVoice JavaScript SDK (only needed once on a page)
+        UserVoice = window.UserVoice || []; (function () { var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true; uv.src = '//widget.uservoice.com/enuzkw6ajNgyhW7YYZoZg.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s) })();
+
+        //
+        // UserVoice Javascript SDK developer documentation:
+        // https://www.uservoice.com/o/javascript-sdk
+        //
+
+        // Set colors
+        UserVoice.push(['set', {
+            accent_color: '#448dd6',
+            trigger_color: 'white',
+            trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+        }]);
+
+        // Identify the user and pass traits
+        // To enable, replace sample data with actual user traits and uncomment the line
+        UserVoice.push(['identify', {
+            email: Parse.User.current().get('email'),
+            //name:       'John Doe', // User’s real name
+            //created_at: 1364406966, // Unix timestamp for the date the user signed up
+            //id:         123, // Optional: Unique id of the user (if set, this should not change)
+            //type:       'Owner', // Optional: segment your users by type
+            //account: {
+            //  id:           123, // Optional: associate multiple users with a single account
+            //  name:         'Acme, Co.', // Account name
+            //  created_at:   1364406966, // Unix timestamp for the date the account was created
+            //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+            //  ltv:          1495.00, // Decimal; lifetime value of the account
+            //  plan:         'Enhanced' // Plan name for the account
+            //}
+        }]);
+
+        // Add default trigger to the bottom-right corner of the window:
+        UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+        // Or, use your own custom trigger:
+        //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+        // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+        UserVoice.push(['autoprompt', {}]);
+    </script>
+</body>
+</html>

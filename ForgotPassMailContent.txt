@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>e2aForums</title>
+<style type="text/css">
+body
+{
+	width:100%;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.container
+{
+	width:615px;
+	height:325px;
+	margin:10px auto;
+	background-color:transparent;
+}
+.main
+{
+	width:585px; 
+	min-height:295px; 
+	float:left; 
+	margin:10px 0px 0px 14px;	
+	background-color:#ffffff;
+	box-shadow: 0px 3px 5px #a3a3a3;
+	
+}
+.header
+{
+	width:585px; 	
+	float:left; 	
+	background-color:#f6f4f4;
+	height:50px;
+	
+}
+h2
+{
+	font-family:Verdana;
+	font-size:24px;
+	color:#314f8c;
+	margin:10px 0 0 10px;
+	float:left;
+	text-transform:uppercase;
+}
+h4
+{
+	font-family:Verdana;
+	font-size:12px;
+	color:#000000;
+	margin:20px 0 0 25px;
+	float:left;
+	font-weight:500;		
+}
+</style></head>
+
+<body>
+
+<div class="container">
+
+   <div class="main" >
+   <div class="header">
+    <img src="http://www.e2aforums.com/ashi/images/logo.png" style="margin:2px 0px 0px 2px; float:left;">
+   
+   </div>
+   
+     <h4>Dear <Name>,<br/><br/>	
+	Please click on the Reset button to change your password:<br/><br/>
+	
+	<a href="<ResetLink>" target='_blank'><img src="http://www.e2aforums.com/User/img/Reset.png"></a><br/><br/>
+	Please Copy/Paste the following link in your browser to reset the password:</br>
+	<ResetLink><br/><br/>
+
+	Thanks <br/>
+	Team e2aForums
+	<br/><br/>
+	If you do not want to get this email, please reply to <a href="mailto:donotreply@e2aForums.com">donotreply@e2aForums.com</a>.
+    <br/>If you have trouble accessing or using the e2aForums, please contact us at <a href="mailto:admin@e2aForums.com">admin@e2aForums.com.com</a>.    
+    
+    </h4>
+   <br/>
+   </div>
+   
+ </div>
+</body>
+</html>

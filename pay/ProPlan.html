@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Payment Account Check</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+
+
+<body>
+    <header class="mainHeader "><a href="http://www.e2aforums.com/">
+        <img src="img/logo.png" alt="e2aforums"></a> </header>
+    <div class="clear"></div>
+    <div class="form-container">
+        <div class="formslideWrap" id="formslideWrap">
+          
+                <div class="first-section" id="first-section">
+                    <h2>You need to  Verifiy your account for which you want to pay!</h2>
+                    <div class="alert-container" id="alert"></div>
+                    <input type="email" placeholder="Enter your email" id="txtEmail" class="txtEmail">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <a onclick="return checkEmail();" id="nextForm" class="btnBig" href="javascript:void(0);">submit</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btnBig danger" href="/">Cancel</a>
+                        </div>
+                    </div>
+
+                    <span class="signUp">If you havn’t any account <a href="../Register.aspx">Create your account</a></span>
+                </div>
+
+              <form id="firstStep" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <div class="sec-section" id="sec-section">
+                    <div class="planInfo">
+                        <h3>Pro Plan</h3>
+                        <span id="plan_price" class="planAmount">$100.99/mo</span>
+                    </div>
+                    <div style="font-weight: bold;">Select Province </div>
+                    <select name="Province" id="ProvOrTerr" class="form-control">
+                        <option value="nothing" selected="selected">Select</option>
+                        <option value="5">Alberta</option>
+                        <option value="5">British Columbia</option>
+                        <option value="5">Manitoba</option>
+                        <option value="13">New Brunswick</option>
+                        <option value="13">Newfoundland and Labrador</option>
+                        <option value="5">Northwest Territories</option>
+                        <option value="15">Nova Scotia</option>
+                        <option value="5">Nunavut</option>
+                        <option value="13">Ontario</option>
+                        <option value="5">Prince Edward Island</option>
+                        <option value="5">Quebec</option>
+                        <option value="5">Saskatchewan</option>
+                        <option value="5">Yukon</option>
+
+                    </select>
+
+                    <ul class="planData">
+                        <li id="plan_des" style="display: none">per month guaranteed for 1 year. Banner ad design is extra.</li>
+
+                        <li>Includes all Tier 1 features plus a banner ad in the members region. Ad will run 5 times a day at different times.</li>
+                        <li>Banner ad design is extra</li>
+
+                    </ul>
+                    <div class="accountData">
+                        <h4>For Account:</h4>
+                        <span class="changeMail">
+                            <div id="val_FullName_Email"></div>
+                        </span><span class="msgmail"><a id="chgemail" href="#">change email</a></span>
+                    </div>
+                    <div class="planButton">
+                        <a href="../Pricing.aspx" class="cancelBtn">CANCEL</a>
+
+                          <!-- Identify your business so that you can collect the payments. -->
+                        <input type="hidden" name="business" value="e2aforums@gmail.com">
+
+                        <!-- Specify a Subscribe button. -->
+                        <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                        <!-- Identify the subscription. -->
+                        <input type="hidden" name="item_name" value="Pro Plan">
+                        <input type="hidden" name="item_number" value="2222">
+
+                        <!-- Set the terms of the regular subscription. -->
+                        <input type="hidden" name="currency_code" value="CAD">
+                        <input type="hidden" name="a3" id="var_amt" value="1.00">
+                                       
+                        
+                        <input type="hidden" name="p3" value="1">
+                        <input type="hidden" name="t3" value="M">
+
+                        <!-- Set recurring payments until canceled. -->
+                        <input type="hidden" name="src" value="1">
+
+                        <!-- Display the payment button. -->
+
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input type="hidden" name="rm" value="2">
+                        <input type="hidden" name="notify_url" value="http://e2aforums.com/pay/ipn.aspx">
+                        <input type="hidden" name="return" value="http://e2aforums.com/pay/response.aspx">
+                        <input type="hidden" name="cancel_return" value="http://e2aforums.com/Pricing.aspx">
+
+
+                        <input type="hidden" name="custom" id="custom_req_id">
+                       <!-- <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="e2aforums@gmail.com">
+                        <input type="hidden" name="item_name" value="Pro Plan">
+                        <input type="hidden" name="item_number" value="2222">
+                        <input type="hidden" id="var_amt" name="amount" value="100">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input type="hidden" name="currency_code" value="CAD">
+                        <input type="hidden" name="rm" value="2">
+                        <input type="hidden" name="notify_url" value="http://e2aforums.com/pay/ipn.aspx">
+                        <input type="hidden" name="return" value="http://e2aforums.com/pay/response.aspx">
+                        <input type="hidden" name="cancel_return" value="http://e2aforums.com/Pricing.aspx">
+                        <input type="hidden" name="custom" id="custom_req_id">-->
+
+                        <input type="submit" id="buyNowbtn" style="display: none" class="buyNow" value="Buy Now">
+                    </div>
+                    <a class="switchplan" href="BasicPlan.html">or switch to Basic Plan</a>
+                </div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    i
+    <div class="paypalbtns">
+        <img class="img-responsive" src="img/paypal-icon.png" alt="Paypal"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        var emailVal = document.getElementById('txtEmail').value;
+
+        function checkEmail() {
+            emailVal = document.getElementById('txtEmail').value;
+            var getBtn = document.getElementById("nextForm");
+            var getfirsttab = document.getElementById("first-section");
+            var getparent = document.getElementById("formslideWrap");
+            var getsecparent = document.getElementById("sec-section");
+            var email = document.getElementById('txtEmail');
+
+            var changeMail = document.getElementById('chgemail');
+
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!filter.test(email.value)) {;
+                email.classList.add("shake", "error");
+
+                return false;
+            } else {
+                $.post("Paymentcheck.aspx",
+                   {
+                       Mode: "UserPayValidate",
+                       ValEmail: emailVal
+                   },
+                   function (VarResponseData) {
+                       $(VarResponseData).find('Response').each(function () {
+                           $(VarResponseData).find('UserData').each(function () {
+                               if ($(this).find('Flag').text() == 1) {
+
+                                   if ($(this).find('Full_Name').text() != "") {
+
+                                       $('#val_FullName_Email').html(" " + $(this).find('EMail').text() + " ( " + $(this).find('Full_Name').text() + " ) ");
+                                   }
+                                   if ($(this).find('ReqID').text() != "") {
+
+                                       $('#custom_req_id').val($(this).find('ReqID').text());
+                                   }
+
+                                   document.getElementById("alert").innerHTML = "";
+                                   getparent.classList.add("slide-out");
+                                   getsecparent.classList.add("flipInX");
+
+                                   getfirsttab.classList.remove("hideFT");
+                                   getparent.classList.remove("backslide");
+
+                                   //Change Email
+                                   changeMail.addEventListener('click', function () {
+                                       getparent.classList.add("backslide");
+                                       getparent.classList.remove("slide-out");
+                                       getfirsttab.classList.add("showFT");
+                                       getfirsttab.classList.remove("hideFT");
+                                       getsecparent.classList.remove("slideIn", "flipInX");
+                                   });
+
+                               }
+                               else {
+                                   document.getElementById("alert").innerHTML = "<span class='errorMsg' id='errorMsg'> <i class='fa fa-warning'></i> Email is not registered ,  <a href='../Register.aspx' target='_blank'>Sign Up</a> first.</span>";
+                               }
+                           }); //end of Response
+                           NProgress.done();
+                       }); //End of Ajax
+
+                       return false;
+                   });
+
+
+            };
+
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+
+    history.pushState(null, null, 'ProPlan.html');
+    window.addEventListener('popstate', function (event) {
+        history.pushState(null, null, 'ProPlan.html');
+    });
+
+    var var_hst_GHT = ""
+    var selectmenu = document.getElementById("ProvOrTerr");
+    selectmenu.onchange = function () { //run some code when "onchange" event fires
+        var chosenoption = this.options[this.selectedIndex] //this refers to "selectmenu"
+        if (chosenoption.value != "nothing") {
+            document.getElementById("buyNowbtn").style.display = "block";
+            document.getElementById("plan_des").style.display = "block";
+
+            var var_price = 100;
+            var var_fd = (Number(var_price) * Number(chosenoption.value) / 100) + Number(var_price);
+
+            document.getElementById("plan_price").innerHTML = "$" + var_fd.toFixed(2) + "/mo";
+            document.getElementById("var_amt").value = var_fd.toFixed(2);
+            if (chosenoption.value == 5) {
+                var_hst_GHT = "GST";
+            }
+            else {
+                var_hst_GHT = "HST";
+            }
+            document.getElementById("plan_des").innerHTML = " " + var_hst_GHT + " ( " + chosenoption.value + " % in " + this.options[this.selectedIndex].text + ", varies with each province) per month guaranteed for 1 year. Banner ad design is extra";
+
+
+        }
+        else {
+            document.getElementById("buyNowbtn").style.display = "none";
+            document.getElementById("plan_des").style.display = "none";
+
+        }
+    }
+
+</script>

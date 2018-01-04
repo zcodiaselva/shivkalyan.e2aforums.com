@@ -1,0 +1,61 @@
+/*
+Author:           Łukasz Girek
+Author URI:       http://www.rzepak.pure.pl/
+Project:
+Description:
+*/
+/*---------------------------------------------------------------------------------------
+--- RESETS
+---------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------
+
+ELEMENTS			 */
+
+.message_table{ margin:0px; float:left; margin-top:0px 0px 0px 0px; padding:0px; color:#4c4c4c; font-family:Helvetica;}
+.message_table th{padding:7px 0px 5px 7px; font-size:14px; font-family:Helvetica; background-color:#314f8c; color:#fff; margin:0px; text-transform:capitalize;height:20px; border-bottom:#314f8c solid 1px; border-top:#314f8c solid 1px; }
+.message_table td{font-size:14px; padding:7px 0px 5px 7px; color:#333333; margin:0px; font-family:Helvetica; border-bottom: #e6e6e6 solid 1px; }
+.message_table .table_date{width:150px; margin:0px; padding:0px;}
+.message_table .table_check{width:20px; padding:0px ; margin:0px;}
+.message_table .table_title {width:300px; padding:0px ; margin:0px;}
+.message_table a {text-decoration:none}
+.unread {background-color:#eff3fb; color:#333333;}
+
+#table_options{background:#fff;border:solid #4780ae;border-width:0px 1px 1px 1px;padding:0px;}
+#table_options label{margin:0px;padding-top:2px;}
+#table_options ul{list-style:none;margin:0px;padding:0px;}
+#table_options ul li{float:left;padding:5px;margin-right:10px;}
+
+.pagination{margin-top:20px; padding:7px 0px 7px 0px; color:#fff; background:#eff3fb}
+.pagination a, .pagination span{padding:2px;margin:2px; font-size:12px; text-decoration:none;-moz-border-radius:3px;-webkit-border-radius: 3px;}
+.pagination .current{ background-color:#4c4c4c;}
+
+.div-border {border:1px solid #ddd; -moz-border-radius:3px; }
+
+.file{
+	border:1px solid #eee;}
+	
+.h2-a {float:right; font-size:12px; color:#4780ae;}
+
+.MessageContainer {margin-top:0px; margin-bottom:10px; border:1px solid #ddd; -moz-border-radius:3px;}
+.MessageContainer .MessageHeading {margin-left:0px;}
+.MessageContainer .MessageHeading .from {font-family:Helvetica; font-size:12px; font-weight:bold;}
+.MessageContainer .MessageHeading .time {font-family:Helvetica; font-size:12px; margin-right:10px;}
+.MessageContainer .MessageHeading ul{list-style:none;margin:0px;padding:0px;}
+.MessageContainer .MessageHeading ul li{float:left;padding:5px;margin-right:10px;}
+.MessageContainer .MessageHeading ul li a {color:#000;display:block;padding-top:5px;}
+
+.MessageContainer .MessageContent {margin: 20px 6px 6px 6px; border:1px solid #ddd; -moz-border-radius:3px;}
+.MessageContainer .MessageContent #MessageContents {margin:4px;}
+.MessageContainer .MessageFooter {margin-left:10px; margin-bottom:10px;}
+.MessageContainer .MessageFooter .reply {color:#4780ae; font-weight:bold; margin-left:5px;}
+.MessageContainer .MessageFooter .forward {margin-left:15px;color:#4780ae; font-weight:bold;}
+
+
+.Refreshlist{
+    background-image:url(images/Refresh.png) no-repeat;
+}
+
+
+
+

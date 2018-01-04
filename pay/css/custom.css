@@ -1,0 +1,421 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #458dc4;
+}
+ul {
+	padding: 0px;
+	list-style: none;
+}
+.text-center{
+	text-align: center;
+}
+.thanku .img-responsive {
+  display: inline-block;
+}
+.clear {
+	clear: both;
+}
+.form-container {
+	background: #fff;
+	border-radius: 5px;
+	width: 560px;
+	margin: auto auto 30px;
+	padding: 30px 0;
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	box-shadow: 4px 5px 1px #3b7aaa;
+}
+.form-container h2 {
+	color: #585858;
+	font-size: 22.15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 60px;
+	line-height: 33px;
+}
+.form-container input[type="email"] {
+	height: 53px;
+	padding: 10px 10px 10px 38px;
+	background-color: #eeeeee;
+	background-image: url(../img/msg-icon.png);
+	background-repeat: no-repeat;
+	background-position: 7px center;
+	border: 1px solid #cacacc;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+	margin-bottom: 19px;
+}
+.form-container .btnBig {
+	height: 60px;
+	border: none;
+	text-transform: uppercase;
+	padding: 10px;
+	background: #19925d;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+	margin-bottom: 19px;
+	line-height: 36px;
+}
+.signUp {
+	float: left;
+	width: 100%;
+	color: #a2a2a2;
+	text-align: center;
+}
+.signUp a {
+	color: #f57f00;
+}
+.mainHeader {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 60px 0;
+}
+.first-section {
+	padding-left: 34px;
+}
+.first-section {
+	opacity: 1;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	padding: 0 34px;
+	width: 559px;
+	float: left;
+}
+.formslideWrap {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	width: 1143px;
+}
+.slide-out {
+	margin-left: -559px;
+}
+.hideFT {
+	opacity: 0;
+}
+.showFT {
+	opacity: 1;
+}
+
+
+
+.btnBig.danger {
+  background: #ef2924;
+}
+
+
+.sec-section {
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+	float: left;
+	padding: 0 34px;
+	width: 559px;
+	display: none;
+}
+
+@-webkit-keyframes flipInX { 
+    0% { 
+        -webkit-transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+    40% { 
+        -webkit-transform: perspective(400px) rotateX(-10deg); 
+    } 
+    70% { 
+        -webkit-transform: perspective(400px) rotateX(10deg); 
+    } 
+    100% { 
+        -webkit-transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+} 
+@keyframes flipInX { 
+    0% { 
+        transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+    40% { 
+        transform: perspective(400px) rotateX(-10deg); 
+    } 
+    70% { 
+        transform: perspective(400px) rotateX(10deg); 
+    } 
+    100% { 
+        transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+} 
+.flipInX { 
+    -webkit-backface-visibility: visible !important; 
+    -webkit-animation-name: flipInX; 
+    backface-visibility: visible !important; 
+    animation-name: flipInX; 
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.txtEmail { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+  
+} 
+
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+
+
+.error{
+	border: 2px solid #ef2924 !important;
+}
+
+
+
+.slideIn {
+	opacity: 1;
+	display: block;
+}
+
+.paypalbtns {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.paypalbtns img {
+	display: inline-block;
+}
+.changeMail {
+	display: inline-block;
+	background: url(../img/msg-icon.png) no-repeat center left;
+	margin-top: 3px;
+	padding-left: 30px;
+	margin-right: 10px;
+}
+.msgmail {
+	display: inline-block;
+	margin-top: 2px;
+}
+.switchplan {
+	color: #868686;
+	display: inline-block;
+	font-size: 13px;
+	margin-left: 42px;
+	margin-top: 5px;
+}
+
+.backslide{
+margin-left: 0;
+}
+
+.alert-container{
+    position:relative;
+}
+.errorMsg{
+color: red;
+    position: absolute;
+    top: -31px;
+}
+/*ASHIMA CSS STARTS*/
+.planInfo {
+	float: left;
+	width: 100%;
+}
+.planInfo h3 {
+	float: left;
+	font-size: 26px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.planAmount {
+	color: #19925d;
+	float: right;
+	font-size: 26px;
+}
+.planData {
+	float: left;
+	width: 100%;
+	margin-top: 52px;
+}
+.planData li {
+	background: url("../img/bluetick.png") no-repeat scroll 0 1px;
+	color: #595959;
+	float: left;
+	font-size: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	width: 100%;
+}
+.accountData, .payment-summary {
+	background: #eaeaea;
+	float: left;
+	margin-bottom: 30px;
+	width: 559px;
+}
+.payment-summary{
+	padding: 0px 34px 10px 34px;
+}
+.payment-summary h5, .paymentSum{
+font-size: 15px;
+color: #595959;
+}
+.payment-summary h5{
+	text-transform: uppercase;
+text-align: center;
+}
+.accountData{
+	margin-left: -34px;	
+	padding: 22px 34px;
+}
+.accountData h4 {
+	color: #585858;
+	float: left;
+	font-size: 20px;
+	margin: 0;
+
+}
+.changeMail {
+	float: left;
+	margin-left: 15px;
+}
+.changeMail > a {
+	background: url("../img/msg-icon.png") no-repeat scroll 0 5px;
+	color: #595959;
+	float: left;
+	padding: 3px 25px;
+}
+.msgmail a {
+	font-size: 15px;
+	color: #ec471b;
+}
+.planButton {
+	float: left;
+	width: 100%;
+}
+.cancelBtn, .pdf {
+	width: 194px;
+	height: 60px;
+	color: #fff;
+	background: #d75b00;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 56px;
+	float: left;
+	margin-right: 6px;
+	border: none;
+}
+.invoicePrint, .pdf {
+	width: 194px;
+	height: 60px;
+	color: #fff;
+	background: #d75b00;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 56px;
+	float: left;
+	margin-right: 6px;
+	border: none;
+}
+
+
+.buyNow, .bckbtn, .print {
+	width: 264px;
+	height: 60px;
+	color: #fff;
+	background: #19925d;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 56px;
+	border: none;
+}
+.buyNow{
+		float: left;
+}
+.bckbtn{
+	display: inline-block;
+}
+.btohome{
+
+}
+.thanku {
+	margin-bottom: 30px;
+}
+/*ASHIMA CSS ENDS*/
+@media only screen and (max-width: 640px) {
+	.form-container {
+  margin: 0 5%;
+  width: 90%;
+}
+.first-section {
+  width: 100%;
+}
+.formslideWrap {
+  float: left;
+  width: 100%;
+}
+.form-container h2 {
+font-size: 18.15px;
+}
+}
+@media only screen and (max-width: 480px) {
+.form-container h2 {
+  line-height: 25px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+}
+@media only screen and (max-width: 320px) {
+.form-container h2 {
+  font-size: 11px;
+}
+.paypalbtns {
+  margin-top: 20px;
+}
+.form-container input[type="email"] {
+  font-size: 12px;
+}
+}
+
+@media print{
+
+}
